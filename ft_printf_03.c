@@ -67,6 +67,8 @@ char	*ft_itoa(int n)
 		l *= -1;
 		p[0] = '-';
 	}
+	if (n == 0)
+		p[0] = '0';
 	p[i] = '\0';
 	while (i-- > 0)
 	{
